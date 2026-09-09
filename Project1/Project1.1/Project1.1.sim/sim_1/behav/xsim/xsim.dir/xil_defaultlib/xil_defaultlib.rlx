@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+A:/WSU/EE_324/Project1/Project1.1/Project1.1.sim/sim_1/behav/xsim/glbl.v,1773749341,verilog,,,,glbl,,,,,,,,
+A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sim_1/new/testbench.v,1788811616,verilog,,,,count_wrap_tb,,,../../../../../../../../AMD/2026.1/Vivado/data/rsb/busdef,,,,,
+A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v,1788811616,verilog,,A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v,,bin_count,,,../../../../../../../../AMD/2026.1/Vivado/data/rsb/busdef,,,,,
+A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v,1788812791,verilog,,A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sim_1/new/testbench.v,,count_wrap,,,../../../../../../../../AMD/2026.1/Vivado/data/rsb/busdef,,,,,

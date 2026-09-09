@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_wrap_tb

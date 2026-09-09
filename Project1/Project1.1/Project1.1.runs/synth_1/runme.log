@@ -1,0 +1,275 @@
+
+*** Running vivado
+    with args -log count_wrap.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source count_wrap.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 06-nov-2026.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep  7 13:07:02 2026
+# Process ID         : 20988
+# Current directory  : A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1
+# Command line       : vivado.exe -log count_wrap.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source count_wrap.tcl
+# Log file           : A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1/count_wrap.vds
+# Journal file       : A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1\vivado.jou
+# Running On         : Tyrone
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor            
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 34277 MB
+# Swap memory        : 36507 MB
+# Total Virtual      : 70785 MB
+# Available Virtual  : 43969 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Mon Sep  7 13:07:02 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source count_wrap.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 627.797 ; gain = 269.520
+Command: synth_design -top count_wrap -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-1686] The version limit for your license is '2026.09' and will not allow you to run AMD software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 992
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.547 ; gain = 570.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'count_wrap' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin_count' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:23]
+	Parameter MAX_COUNT bound to: 823 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin_count' (0#1) [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:23]
+WARNING: [Synth 8-6104] Input port 'a_val' has an internal driver [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:44]
+INFO: [Synth 8-6157] synthesizing module 'bin_count__parameterized0' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:23]
+	Parameter MAX_COUNT bound to: 600 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin_count__parameterized0' (0#1) [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:23]
+WARNING: [Synth 8-6104] Input port 'b_val' has an internal driver [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'count_wrap' (0#1) [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+WARNING: [Synth 8-7129] Port en in module count_wrap is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.934 ; gain = 690.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.934 ; gain = 690.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.934 ; gain = 690.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.934 ; gain = 690.184
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port en in module count_wrap is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1562.766 ; gain = 927.016
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1562.766 ; gain = 927.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1562.766 ; gain = 927.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[9] with 1st driver pin 'a_val_IBUF[9]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[9] with 2nd driver pin 'cntrA/val_reg[9]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[8] with 1st driver pin 'a_val_IBUF[8]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[8] with 2nd driver pin 'cntrA/val_reg[8]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[7] with 1st driver pin 'a_val_IBUF[7]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[7] with 2nd driver pin 'cntrA/val_reg[7]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[6] with 1st driver pin 'a_val_IBUF[6]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[6] with 2nd driver pin 'cntrA/val_reg[6]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[5] with 1st driver pin 'a_val_IBUF[5]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[5] with 2nd driver pin 'cntrA/val_reg[5]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[4] with 1st driver pin 'a_val_IBUF[4]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[4] with 2nd driver pin 'cntrA/val_reg[4]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[3] with 1st driver pin 'a_val_IBUF[3]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[3] with 2nd driver pin 'cntrA/val_reg[3]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[2] with 1st driver pin 'a_val_IBUF[2]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[2] with 2nd driver pin 'cntrA/val_reg[2]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[1] with 1st driver pin 'a_val_IBUF[1]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[1] with 2nd driver pin 'cntrA/val_reg[1]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[0] with 1st driver pin 'a_val_IBUF[0]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a_val_IBUF[0] with 2nd driver pin 'cntrA/val_reg[0]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[9] with 1st driver pin 'b_val_IBUF[9]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[9] with 2nd driver pin 'cntrB/val_reg[9]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[8] with 1st driver pin 'b_val_IBUF[8]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[8] with 2nd driver pin 'cntrB/val_reg[8]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[7] with 1st driver pin 'b_val_IBUF[7]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[7] with 2nd driver pin 'cntrB/val_reg[7]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[6] with 1st driver pin 'b_val_IBUF[6]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[6] with 2nd driver pin 'cntrB/val_reg[6]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[5] with 1st driver pin 'b_val_IBUF[5]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[5] with 2nd driver pin 'cntrB/val_reg[5]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[4] with 1st driver pin 'b_val_IBUF[4]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[4] with 2nd driver pin 'cntrB/val_reg[4]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[3] with 1st driver pin 'b_val_IBUF[3]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[3] with 2nd driver pin 'cntrB/val_reg[3]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[2] with 1st driver pin 'b_val_IBUF[2]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[2] with 2nd driver pin 'cntrB/val_reg[2]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[1] with 1st driver pin 'b_val_IBUF[1]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[1] with 2nd driver pin 'cntrB/val_reg[1]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[0] with 1st driver pin 'b_val_IBUF[0]_inst/O' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/count_wrap.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin b_val_IBUF[0] with 2nd driver pin 'cntrB/val_reg[0]/Q' [A:/WSU/EE_324/Project1/Project1.1/Project1.1.srcs/sources_1/new/bin_count.v:31]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       20|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     3|
+|3     |LUT3 |     4|
+|4     |LUT4 |     7|
+|5     |LUT5 |    10|
+|6     |LUT6 |    22|
+|7     |FDRE |    20|
+|8     |IBUF |    22|
+|9     |OBUF |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+--------------------------+------+
+|      |Instance |Module                    |Cells |
++------+---------+--------------------------+------+
+|1     |top      |                          |    91|
+|2     |  cntrA  |bin_count                 |    31|
+|3     |  cntrB  |bin_count__parameterized0 |    31|
++------+---------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 40 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.895 ; gain = 1184.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1819.922 ; gain = 1184.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1834.945 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1948.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 14f09bb
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 4 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1949.621 ; gain = 1321.824
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1949.621 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1/count_wrap.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file count_wrap_utilization_synth.rpt -pb count_wrap_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  7 13:07:53 2026...

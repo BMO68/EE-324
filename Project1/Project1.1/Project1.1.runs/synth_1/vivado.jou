@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep  7 13:07:02 2026
+# Process ID         : 20988
+# Current directory  : A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1
+# Command line       : vivado.exe -log count_wrap.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source count_wrap.tcl
+# Log file           : A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1/count_wrap.vds
+# Journal file       : A:/WSU/EE_324/Project1/Project1.1/Project1.1.runs/synth_1\vivado.jou
+# Running On         : Tyrone
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor            
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 34277 MB
+# Swap memory        : 36507 MB
+# Total Virtual      : 70785 MB
+# Available Virtual  : 43969 MB
+#-----------------------------------------------------------
+source count_wrap.tcl -notrace
