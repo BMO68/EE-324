@@ -4,17 +4,13 @@
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
-exit
-
 if [ -z "$PATH" ]; then
-  PATH=A:/AMD/2026.1/Vitis/bin;A:/AMD/2026.1/Vivado/ids_lite/ISE/bin/nt64;A:/AMD/2026.1/Vivado/ids_lite/ISE/lib/nt64:A:/AMD/2026.1/Vivado/bin
+  PATH=/home/dabingster/Public/AMD/2025.2/Vitis/bin:/home/dabingster/Public/AMD/2025.2/Vivado/ids_lite/ISE/bin/lin64:/home/dabingster/Public/AMD/2025.2/Vivado/bin
 else
-  PATH=A:/AMD/2026.1/Vitis/bin;A:/AMD/2026.1/Vivado/ids_lite/ISE/bin/nt64;A:/AMD/2026.1/Vivado/ids_lite/ISE/lib/nt64:A:/AMD/2026.1/Vivado/bin:$PATH
+  PATH=/home/dabingster/Public/AMD/2025.2/Vitis/bin:/home/dabingster/Public/AMD/2025.2/Vivado/ids_lite/ISE/bin/lin64:/home/dabingster/Public/AMD/2025.2/Vivado/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='A:/WSU/EE_324/Project1.4/Project1.4.runs/clk_wiz_0_synth_1'
+HD_PWD='/home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/clk_wiz_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

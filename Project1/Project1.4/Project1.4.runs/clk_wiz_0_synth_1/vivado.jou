@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2026.1 (64-bit)
-# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
-# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
-# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
-# Start of session at: Tue Sep  8 21:17:53 2026
-# Process ID         : 32828
-# Current directory  : A:/WSU/EE_324/Project1.4/Project1.4.runs/clk_wiz_0_synth_1
-# Command line       : vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
-# Log file           : A:/WSU/EE_324/Project1.4/Project1.4.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
-# Journal file       : A:/WSU/EE_324/Project1.4/Project1.4.runs/clk_wiz_0_synth_1\vivado.jou
-# Running On         : Tyrone
-# Platform           : Windows 11
-# Operating System   : 26200
-# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor            
-# CPU Frequency      : 3700 MHz
-# CPU Physical cores : 12
-# CPU Logical cores  : 24
-# Host memory        : 34277 MB
-# Swap memory        : 36507 MB
-# Total Virtual      : 70785 MB
-# Available Virtual  : 40989 MB
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep 16 17:41:39 2026
+# Process ID         : 17810
+# Current directory  : /home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/clk_wiz_0_synth_1
+# Command line       : vivado -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file           : /home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file       : /home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/clk_wiz_0_synth_1/vivado.jou
+# Running On         : Tyrion
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 26.04.1 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency      : 4365.386 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 32755 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41345 MB
+# Available Virtual  : 35181 MB
 #-----------------------------------------------------------
 source clk_wiz_0.tcl -notrace
