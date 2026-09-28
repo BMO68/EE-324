@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Wed Sep 23 17:24:20 2026
+| Host         : Tyrion running 64-bit Ubuntu 26.04.1 LTS
+| Command      : report_methodology -file vga_wrapper_methodology_drc_routed.rpt -pb vga_wrapper_methodology_drc_routed.pb -rpx vga_wrapper_methodology_drc_routed.rpx
+| Design       : vga_wrapper
+| Device       : xc7z007sclg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 1
++---------+----------+------------------------------+--------+
+| Rule    | Severity | Description                  | Checks |
++---------+----------+------------------------------+--------+
+| LUTAR-1 | Warning  | LUT drives async reset alert | 1      |
++---------+----------+------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell vga_to_hdmi/inst/encr/oserdes_m_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) vga_to_hdmi/inst/encg/dout_reg[9]/CLR,
+vga_to_hdmi/inst/encr/cnt_reg[1]/CLR, vga_to_hdmi/inst/encr/cnt_reg[2]/CLR,
+vga_to_hdmi/inst/encr/cnt_reg[3]/CLR, vga_to_hdmi/inst/encr/cnt_reg[4]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[0]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[1]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[2]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[3]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[4]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[5]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[6]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[7]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[8]/CLR,
+vga_to_hdmi/inst/encr/dout_reg[9]/CLR (the first 15 of 42 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

@@ -1,0 +1,5 @@
+vhdl xpm  \
+"/home/dabingster/Public/AMD/2025.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+# Do not sort compile order
+nosort

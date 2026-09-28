@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Sep 23 14:38:20 2026
+# Process ID         : 259749
+# Current directory  : /home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/impl_1
+# Command line       : vivado -log vga_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_wrapper.tcl -notrace
+# Log file           : /home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/impl_1/vga_wrapper.vdi
+# Journal file       : /home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.4/Project1.4.runs/impl_1/vivado.jou
+# Running On         : Tyrion
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 26.04.1 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency      : 3499.905 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 32755 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41345 MB
+# Available Virtual  : 29655 MB
+#-----------------------------------------------------------
+source vga_wrapper.tcl -notrace

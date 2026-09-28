@@ -1,0 +1,27 @@
+Time resolution is 1 ps
+----------------------------------------
+Reset released at time 200000
+----------------------------------------
+PASS: Clocking Wizard locked.
+Lock time = 8426000
+
+Measured clock period = 142.857 ns
+PASS: Clock frequency is approximately 7 MHz.
+
+PASS: Counter A reached 10.
+a_val = 10
+PASS: A is high when a_val = 412.
+PASS: A goes low after count 412.
+
+Counter A reached its maximum value.
+a_val = 823
+PASS: Counter B is still 0 before A rollover.
+PASS: Counter A rolled over to 0.
+PASS: Counter B incremented to 1.
+PASS: Counter B only counts when A rolls over.
+
+----------------------------------------
+TESTBENCH COMPLETE
+----------------------------------------
+$finish called at time : 127488856 ps : File "/home/dabingster/Public/WSU/EE 324/EE-324/Project1/Project1.2.2025/Project1.2.2025.srcs/sim_1/new/testbench.v" Line 237
+INFO: xsimkernel Simulation Memory Usage: 286584 KB (Peak: 339496 KB), Simulation CPU Usage: 18690 ms
